@@ -314,8 +314,8 @@ export default function MarketsGrid({ exchange }) {
       )}
     {/* Popup for Google Sheet info */}
     {viewSymbol && (
-      <div className="alpha-popup-overlay" style={{position:'fixed',top:0,left:0,right:0,bottom:0,background:'rgba(0,0,0,0.45)',zIndex:9999,display:'flex',alignItems:'center',justifyContent:'center'}}>
-        <div className="alpha-popup metallic-panel" style={{minWidth:350,maxWidth:500,padding:24,borderRadius:8,background:'#222',color:'#e0e0e0',boxShadow:'0 2px 16px #000'}}>
+      <div className="alpha-popup-overlay" style={{position:'fixed',top:0,left:0,right:0,bottom:0,background:'rgba(0,0,0,0.45)',zIndex:9999,display:'flex',alignItems:'flex-start',justifyContent:'flex-end'}}>
+        <div className="alpha-popup metallic-panel" style={{minWidth:350,maxWidth:500,padding:24,margin:'32px 32px 0 0',borderRadius:8,background:'#222',color:'#e0e0e0',boxShadow:'0 2px 16px #000'}}>
           <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:8}}>
             <div style={{fontWeight:700,fontSize:18}}>Sheet Data: {viewSymbol}</div>
             <button className="metallic-btn" style={{fontSize:16,padding:'2px 10px'}} onClick={closePopup}>Close</button>
